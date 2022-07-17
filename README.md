@@ -1,6 +1,7 @@
 # Dynamic-Greedy-Algorithms
 
 INTRODUCTION
+
 The aim of the assignment is to find the conditions of a car company with the least cost and
 the most profit. The assignment consists of two parts, part1 and part2. To briefly
 explanation part1: The car company has a fixed number of cars that it can produce every
@@ -20,6 +21,7 @@ calculate both greedy and dynamic programming method.
 
 
 RUN TIME COMPLEXITY AND SPACE COMPLEXITY
+
 c: number of investment companies, x:number of months r:total number of cars demanded
 Dynamic Programming Method for Cost:
 Run Time : O(r * r*x)
@@ -35,6 +37,7 @@ Run Time : O (c *x )
 Space Complexity : O (1*x)
 
 EXPLANATION OF ALGORITHMS
+
 While calculating the cost, two-dimensional array was used while using the dynamic
 programming method. The dimensions of two-dimensional array are the sum of the
 demanding month and the number of requests up to that month. The line with (i=0)
@@ -52,6 +55,7 @@ the production difference of this month and the value of the previous month. If 
 cars demanded in the i. month is less than our production capacity; If the number of cars
 demanded in the first month is less than our production capacity, I used loop in the array as
 much as the difference of the number of cars demanded that month.
+
 In the greedy algorithm method when calculating the cost, if the number of cars demanded
 in the next month is more than the number of cars we can produce and if the number of cars
 demanded this month is less than the number of cars production, we will pay less if we keep
@@ -66,6 +70,7 @@ According to the different combinations of each investment company coming from e
 month, the best results obtained for each investment company are kept. At the end of the
 month, it is collected with the highest value among the investment companies and the last
 half of the last month.
+
 (Dynamic Programming method for part2)
 In the method of greedy algorithm in profit calculation, we keep our money at the value of
 which investment company gives the highest value for each month, we do not need to
@@ -73,10 +78,12 @@ examine other situation. While trying to find the maximum value, for every month
 previous investment company are different, the value of ‘t’ is subtracted from our money,
 multiplied by the proposal of the investment company and added to the existing money we
 have. If the result is greater than our maximum, that will be our new maximum value.
+
 PROBLEMS ENCOUNTERED
 I had difficulties while installing the algorithm because I could not think very effectively
 how the greedy method should proceed while making cost calculations. So I could not
 be sure of the results from the greedy method.
+
 CONCLUSION
 The dynamic programming method gives us the best possible result. When we do the
 dynamic programming method, the run time is less and space complexity less than the
